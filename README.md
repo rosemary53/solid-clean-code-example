@@ -14,4 +14,10 @@ ISiparisIslemleri metodunun içinde farklı sınıfların sorumluluğunda olan b
 
 ## Veritabanı İşlemlerinde Birden Fazla Alternatifin Kullanılması Durumu : DIP
 
-Spagetti Code'da veritabanı işlemlerinde yalnızca Sqlite'a bir bağımlılık söz konusu idi. Ancak sisteme sonradan eklenecek olan alternatif veri tabanları için örneğin Firebase,Supabase vb. kodda değişiklik yapılması gerekiyordu. Bu durumu engellemek için VeritabanıServisi abstract classı oluşturuldu. Bu sayede istenen veri tabanı sistemde esnek bir şekilde dahil edildi.
+Spagetti Code'da veri tabanı işlemlerinde yalnızca Sqlite'a bir bağımlılık söz konusu idi. Ancak sisteme sonradan eklenecek olan alternatif veri tabanları için örneğin Firebase,Supabase vb. kodda değişiklik yapılması gerekiyordu. Bu durumu engellemek için VeritabanıServisi abstract classı oluşturuldu. Bu sayede istenen veri tabanı sistemde esnek bir şekilde dahil edildi.
+
+## Mail, Sms İşlemlerinde de Bağımlılığın ortadan kaldırılması
+
+## Stok durumu,Stok Azaltma, Sipariş Fiyatı gibi sorumlulukların Siparis Yöneticisi sınıfından ayrılması : SRP
+
+Siparis yöneticisi sınıfında birbirinden farklı durumların sorumluluğunu yerine getiren metodların yer almasından ve bu durum kodu fazla şişirdiğinden dolayı ayrı hizmetlere ayrıldı.
